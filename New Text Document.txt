@@ -1,0 +1,12 @@
+for(i=0;i<5;i++)// 5 sensor array
+   {
+     readings[i]=digitalRead(sensPins[i]);
+   }
+   //Loop converts the array to an integer
+   while(j<5)
+   {
+     inp=inp*10+readings[j];
+     j=j+1;
+  }
+  //Returns the reading as an integer
+  return inp;
